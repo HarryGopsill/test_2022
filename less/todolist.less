@@ -1,0 +1,227 @@
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: icon;
+    src: url(../fonts/fontawesome-webfont.ttf);
+}
+  
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.main{
+    display: flex;
+    font-family: roboto;
+    background-color: rgb(30, 29, 29);
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+
+    // *{
+    //     font-family: roboto;
+    // }
+    .left, .right{
+        width: 50vw;
+        padding: 40px;
+
+       
+
+        h1{
+            font-family: roboto;
+            font-size: 128px;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            white-space: nowrap;
+        }
+    }
+
+    .right{
+        // height: 100vh;
+        overflow-y: scroll;
+        background-color: #181E23;
+
+        .header{
+            margin-bottom: 75px;
+            
+            span{
+                display: inline-block;
+                font-size: 32px;
+                color: #ababab;
+            }
+            .button{
+                display: inline-block;
+                position: absolute;
+                right: 40px;
+                top: 40px;
+                padding: 13px;
+               
+                .fa{
+                    font-size: 42px;
+                
+                    color: white;
+                    font-family: icon;
+                }
+            }
+        }
+
+        .form{
+            // height: 0px;
+            overflow: hidden;
+            background-color: #1f242b;
+            padding: 20px;
+            display: none;
+
+            input, select{
+                font-size: 32px;
+                padding: 10px 20px;
+                display: inline-block;
+                margin: 10px 0px;
+            }
+
+            button{
+                font-size: 32px;
+            }
+
+            &.open{
+               display: block;
+            }
+        }
+    }
+
+    .left{
+        background-color: #1F242B;
+        .header{
+            margin-bottom: 75px;
+            .button{
+                display: inline-block;
+                font-size: 40px;
+                color: white;
+                display: inline-block;
+                float: right;
+               
+                margin-left: 34px;
+                
+            }
+            #todaysDate{
+                font-family: roboto;
+                font-size: 32px;
+                color: #ABABAB;
+                display: inline-block;
+            }
+        }
+
+        
+    }
+}
+
+
+.list{
+ 
+}
+
+.task{
+
+
+
+    flex-grow: 1;
+    border-radius: 15px;
+    position: relative;
+    height: 124px;
+    background-color: #1F242B;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 52px;
+
+    
+
+   
+
+
+    &:first-of-type{
+        margin-top: 40px;
+    }
+
+    &:before{
+        content: '';
+        height: 116px;
+        width: 8px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    &:after{
+        content: '';
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        top: 0px;
+        opacity: 0.2;
+       
+    }
+    
+
+    &.Work{
+        &:before{
+            background-color: #E08A26;
+        }
+
+        &:after{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(224,138,38,0) 30%, rgba(224,138,38,0.027024383972338972) 51%, rgba(224,138,38,1) 100%);
+        }
+    }
+
+    &.Home{
+       
+        &:before{
+            background-color: #6826e0;
+        }
+
+        &:after{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(9,9,121,0) 30%, rgba(104,38,224,0.3239431514793417) 52%, rgba(104,38,224,1) 100%);
+        }
+    }
+
+    &.disabled{
+        opacity: 0.2;
+    }
+
+    .close{
+        position: absolute;
+        top: 36px;
+        right: 21px;
+        padding: 20px;
+        /* border: solid 1px white; */
+        background-color: transparent;
+        /* border: none; */
+        font-size: 43px;
+        z-index: 33333;
+    
+
+        &::after{
+            content: '\f1f8';
+            font-family: icon;
+            color: white;
+        }
+    }
+
+    span{
+        display: block;
+        color: white;
+        font-size: 32px;
+
+        &.desc{
+            font-size: 32px;
+            color: #A6A6A6;
+        }
+    }
+}

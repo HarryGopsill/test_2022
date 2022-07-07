@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Firebase Tutorial</title>
+		<link rel="stylesheet" href="less/font-awesome.min.css">
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+		<link rel="stylesheet" >
+		<link rel="stylesheet" type="text/css" href="less/todolist.css">
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		
+		<script src="js/todolist.js"></script>
+	</head>
+	<body>
+
+        <div class="main">
+            <div class="left">
+				<div class="header">
+					<div id="todaysDate"></div>
+
+					<a href="https://console.firebase.google.com/u/0/project/homepage-c3b5e/database/homepage-c3b5e-default-rtdb/data" class="button"><i class="fa fa-database" aria-hidden="true"></i></a>
+
+					<a href="https://github.com/HarryGopsill/firebase"class="button"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+				</div>
+				
+                <div class="date">
+					<h1 id="line1"></h1>
+					<h1 id="line2"></h1>
+				</div>
+            </div>
+
+            <div class="right">
+                <div class="container">
+
+					<div class="header">
+
+						<span>To to list</span>
+
+						<div class="button">
+							<i class="fa fa-plus" aria-hidden="true"></i>
+						</div>
+
+					</div>
+					<div class="form">
+						<input type="text" placeholder="name" id="nameField">
+						<input type="text" placeholder="age" id="ageField">
+						<select id="datepicker" name="title" placeholder="Type" >
+							<option value="Work">Work</option>
+							<option value="Home">Home</option>
+						</select>
+	
+						<button class="submit"> Submit </button>
+					</div>
+                    
+
+                    <div id="list" class="list">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+	
+		<script>
+		
+		</script>
+		<script>
+			// $( document ).ready(function() {
+			    // setTimeout( function() {
+			    //     eventListeners();
+			    // }, 5000);
+			// });
+		</script>
+	</body>
+</html>
