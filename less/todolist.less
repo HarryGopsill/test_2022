@@ -91,6 +91,8 @@ body{
                display: block;
             }
         }
+
+       
     }
 
     .left{
@@ -113,6 +115,41 @@ body{
                 color: #ABABAB;
                 display: inline-block;
             }
+
+            
+        }
+
+        .google{
+            margin-top: 20px;
+            position: relative;
+
+            input{
+                padding: 20px 40px;
+                font-size: 32px;
+                background-color: #181e23;
+                border: none;
+                color: #fff;
+                &:focus{
+                    outline: none;
+                }
+
+                &::placeholder{
+                    color: #fff;
+                }
+            }
+
+            button{
+                margin-left: 10px;
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                padding: 0px 24px;
+                font-size: 29px;
+                outline: none;
+                border: none;
+                color: #fff;
+                background-color: #181e23;
+            }
         }
 
         
@@ -131,7 +168,7 @@ body{
     flex-grow: 1;
     border-radius: 15px;
     position: relative;
-    height: 124px;
+    height: 44px;
     background-color: #1F242B;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -149,7 +186,7 @@ body{
 
     &:before{
         content: '';
-        height: 116px;
+        height: 42px;
         width: 8px;
         position: absolute;
         left: 20px;
@@ -197,15 +234,13 @@ body{
 
     .close{
         position: absolute;
-        top: 36px;
-        right: 21px;
+        top: 9px;
+        right: 16px;
         padding: 20px;
-        /* border: solid 1px white; */
         background-color: transparent;
-        /* border: none; */
-        font-size: 43px;
+        font-size: 24px;
         z-index: 33333;
-    
+
 
         &::after{
             content: '\f1f8';

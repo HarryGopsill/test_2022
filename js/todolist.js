@@ -68,6 +68,8 @@ $('document').ready(function() {
 	// 	//var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec + ':' + weekday;
 	// 	return time;
 	// }
+
+	$('.google input').focus();
 	var a = new Date();
 	let weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][new Date().getDay()];
 
